@@ -5,9 +5,18 @@ class LoginPage extends BasePage {
     return "/";
   }
 
-  static get xxx() {
-    return cy.get("x[y=z]");
+  static get userName() {
+    return cy.get("#user-name");
   }
+  static get userPassword() {
+    return cy.get("#password");
+  }
+  static get loginButton() {
+    return cy.get("#login-button");
+  }
+  static get errorMessage() {
+    return cy.get('[class="error-message-container error"]');
+  } 
 }
 
 export default LoginPage;
